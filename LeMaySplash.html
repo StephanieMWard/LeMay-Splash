@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The View Realty Group</title>
+<link rel="stylesheet" type="text/css" href="lemaystyle.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="header" id="RNav">
+	<nav><ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="http://www.theviewrealtygroup.com/properties.asp">Featured Properties</a></li>
+		<li><a href="http://www.theviewrealtygroup.com/mlssearch.html">Search Area Listings</a></li>
+		<li><a href="http://www.theviewrealtygroup.com/about.html">About</a></li>
+		<li><a href="http://www.theviewrealtygroup.com/contact.html">Contact</a></li>
+		<li><a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></li>
+	</ul></nav>
+	
+	<img src="splashimgs/logo_transparent.png" class="logo">
+</div><!--End Header-->
+
+
+<div class="heroimage">
+</div><!--End Hero Image-->
+
+
+<div class="maincontent">
+	<div class="mainbuttons row">
+		<div class="col-4">
+		<a href="http://www.theviewrealtygroup.com/mlssearch.html"><div class="button" id="b1">
+		</div><!--End B1--></a>
+		<div class="centertxt"><p class="buttontext"><a href="http://www.theviewrealtygroup.com/mlssearch.html">Search for Properties</a></p></div><!--End CenterTXT-->
+		</div><!--End Grid 4-->
+		
+		<div class="col-4">
+		<a href="http://www.theviewrealtygroup.com/properties.asp"><div class="button" id="b2">
+		</div><!--End B2--></a>
+		<div class="centertxt"><p class="buttontext"><a href="http://www.theviewrealtygroup.com/properties.asp">Search My Listings</a></p></div><!--End CenterTXT-->
+		</div><!--End Grid 4-->
+		
+		<div class="col-4">
+		<a href="http://www.theviewrealtygroup.com/mySite/?action=showListings&class=commercial"><div class="button" id="b3">
+		</div><!--End B3--></a>
+		<div class="centertxt"><p class="buttontext"><a href="http://www.theviewrealtygroup.com/mySite/?action=showListings&class=commercial">Commercial Properties</a></p></div><!--End CenterTXT-->
+		</div><!--End Grid 4-->
+	</div><!--End Main Buttons & Row-->
+
+	<div class="welcome">
+		<h1 class="welcometitle">Welcome to The View Realty Group</h1><br />
+		<p class="welcometext">Welcome to The View Realty Group located in the heart of East Texas.  We are your full service Real Estate Professionals for Residential, Commercial, and Property Management.  Our Associates are knowledgeable in the Longview Real Estate Market and are here to help guide you effectively from beginning to end of the transaction process.  We are members of the Longview Area Association of Realtors, Greater Tyler Association of Realtors, Houston Association of Realtors and LoopNet. <br /><br />Whether you are buying or selling, The View Realty Group will give you <span style="font-weight:bold">SERVICE FIRST!</span> Call us today for a free market analysis!</p>
+	</div><!--End Welcome-->
+</div><!--End Main Content-->
+
+<div class="footer">
+	<div class="fpcontainer">
+		<p><a href="https://www.trec.texas.gov/forms/information-about-brokerage-services">Information About Brokerage Services</a><br /><br />
+		<a href="#">TREC Consumer Protection Notice</a></p>
+	</div><!--End FP(footer paragraph) Container-->
+	
+	<div class="cicontainer">
+		<p id="contactinfo">3002 Gilmer Rd., Suite 5<br />Longview, Texas 75604<br />(903) 759-8439<br /><a href="mailto:martha@theviewrealtygroup.com">martha@theviewrealtygroup.com</a></p>
+	</div><!--End CI(contact info) Container-->
+</div><!--End Footer-->
+
+
+<script>
+<!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+function myFunction() {
+    var x = document.getElementById("RNav");
+    if (x.className === "header") {
+        x.className += " responsive";
+    } else {
+        x.className = "header";
+    }
+}
+</script>
+
+</body>
+</html>

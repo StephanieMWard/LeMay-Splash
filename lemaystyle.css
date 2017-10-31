@@ -1,0 +1,249 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*-----------------------------Grid Layout----------------------------*/
+* {
+	box-sizing: border-box;
+}
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+[class*="col-"] {
+	float: left;
+	padding: 15px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/*-----------------------------Header----------------------------*/
+.header {
+	height: 125px;
+	background-color: #171717;
+}
+.header a {
+	float: left;
+	display: block;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	margin: 50px 15px 20px 15px;
+}
+.header a:hover {
+	color: red;
+}
+.logo {
+	float: right;
+	height: 100px;
+	margin: 10px;
+}
+.header .icon {
+	display: none;
+}
+
+/*-----------------------------IMG----------------------------*/
+.heroimage {
+	height: 500px;
+	background: url(splashimgs/mainimg.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/*-----------------------------Main Content----------------------------*/
+.maincontent {
+	background-color: #171717;
+	padding: 15px;
+}
+.mainbuttons {
+	/*margin: 0 auto;*/
+	/*border: 5px solid red;*/
+	padding-bottom: 70px;
+}
+.button {
+	width: 100px;
+	height: 100px;
+	border: 2px solid black;
+	border-radius: 50%;
+	margin: 0 auto;*/
+}
+#b1 {
+	background-image: url(splashimgs/b3.jpg);
+	background-size: 150px;
+	/*background-color: red;*/
+}
+#b2 {
+	background-image: url(splashimgs/b2.jpg);
+	background-size: 150px;
+	/*background-color: blue;*/
+}
+#b3 {
+	background-image: url(splashimgs/b1.jpg);
+	background-size: 150px;
+	/*background-color: green;*/
+}
+.buttontext {
+	text-align: center;
+	padding-top: 15px;
+	/*color: white;*/
+}
+.maincontent a {
+	color: white;
+	text-decoration: none;
+}
+.welcome {
+	width: 750px;
+	margin: 0 auto;
+}
+.maincontent h1 {
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+}
+p.welcometext{
+	font-size: 1em;
+	text-align: center;
+	color: white;
+	margin: 20px 0 50px 0;
+}
+
+/*-----------------------------Footer----------------------------*/
+.footer {
+	background-color: #B0B0B0;
+	height: 170px;
+}
+.fpcontainer {
+	float: left;
+	display: block;
+}
+.footer p {
+	font-size: 1em;
+	text-align: left;
+	padding-top: 45px;
+	padding-left: 50px;
+	color: black;
+}
+.footer a {
+	text-decoration: none;
+	color: black;
+}
+.cicontainer {
+	float: right;
+	display: block;
+}
+#contactinfo {
+	text-align: center;
+	text-weight: bold;
+	text-size: 1em;
+	padding-top: 45px;
+	padding-right: 50px;
+}
+
+/*-----------------------------Media Queries----------------------------*/
+
+@media only screen and (max-width: 830px) {
+    
+	/* For mobile phones: Grid Layout*/
+    [class*="col-"] {
+        width: 100%;
+    }
+	
+	/* -----------Navigation for small screens------------- */
+	
+	/* When the screen is less than 830 pixels wide, hide all links. Show the link that should open and close the header (.icon) */
+	.header a {display: none;}
+	.header a.icon {
+    float: left;
+    display: block;
+  }
+	/* The "responsive" class is added to the header with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+	.header.responsive {position: relative;}
+	.header.responsive a.icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+	.header.responsive a:nth-child(-n+5) {
+    float: none;
+    display: block;
+    text-align: left;
+	background-color: #171717;
+	height: 70px;
+	margin: 0;
+	padding-top: 20px;
+	position: relative;
+  }
+  /* Hide Logo with Responsive Header */
+  .header.responsive img {display: none;}
+  
+  /* For the Welcome Message */
+  .welcome {
+	min-width: 200px;
+	width: 100%;
+  }
+  
+  /* Footer background color height to expand when text shifts */
+  .footer {
+	  height: 300px;
+  }
+  
+  
+}
